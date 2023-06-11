@@ -63,16 +63,16 @@ class MeeduVideoPlayer extends StatefulWidget {
   /// displayed at an optimal position that doesn't obstruct other important
   /// elements of the video player interface.
   final double closedCaptionDistanceFromBottom;
-  const MeeduVideoPlayer(
-      {Key? key,
-      required this.controller,
-      this.header,
-      this.bottomRight,
-      this.customIcons,
-      this.customControls,
-      this.customCaptionView,
-      this.closedCaptionDistanceFromBottom = 40})
-      : super(key: key);
+  const MeeduVideoPlayer({
+    Key? key,
+    required this.controller,
+    this.header,
+    this.bottomRight,
+    this.customIcons,
+    this.customControls,
+    this.customCaptionView,
+    this.closedCaptionDistanceFromBottom = 40,
+  }) : super(key: key);
 
   @override
   State<MeeduVideoPlayer> createState() => _MeeduVideoPlayerState();

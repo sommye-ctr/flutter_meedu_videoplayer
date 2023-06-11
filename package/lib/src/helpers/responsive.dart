@@ -30,6 +30,13 @@ class Responsive {
   /// The maximum font size.
   double maxFontSize;
 
+  /// The subtitle bg
+  bool subtitleBg;
+
+  double subtitlePadding;
+
+  double subtitleSize;
+
   /// Creates a new [Responsive] instance.
   ///
   /// The optional parameters [fontSizeRelativeToScreen], [iconsSizeRelativeToScreen],
@@ -44,6 +51,9 @@ class Responsive {
     this.maxIconsSize = 60,
     this.buttonsSizeRelativeToScreen = 8,
     this.maxButtonsSize = 60,
+    this.subtitleBg = true,
+    this.subtitlePadding = 40,
+    this.subtitleSize = 36,
   });
 
   /// Sets the screen dimensions.

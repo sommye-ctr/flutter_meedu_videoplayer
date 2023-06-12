@@ -39,7 +39,7 @@ class ClosedCaptionView extends StatelessWidget {
             bottom: responsive.subtitlePadding,
             child: customCaptionView != null
                 ? customCaptionView!(context, _, responsive, strSubtitle)
-                : ClosedCaption(
+                : CustomClosedCaption(
                     text: strSubtitle,
                     blackBackground: responsive.subtitleBg,
                     textStyle: TextStyle(
@@ -54,12 +54,12 @@ class ClosedCaptionView extends StatelessWidget {
   }
 }
 
-class ClosedCaption extends StatelessWidget {
+class CustomClosedCaption extends StatelessWidget {
   /// Creates a a new closed caption, designed to be used with
   /// [VideoPlayerValue.caption].
   ///
   /// If [text] is null or empty, nothing will be displayed.
-  const ClosedCaption({
+  const CustomClosedCaption({
     Key? key,
     this.text,
     this.textStyle,

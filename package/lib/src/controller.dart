@@ -1028,6 +1028,11 @@ class MeeduPlayerController {
     }
   }
 
+  ///Change the enabled controls
+  void changeEnabledControls(EnabledControls controls) {
+    enabledControls = controls;
+  }
+
   /// Toggle Change the videofit accordingly
   void toggleVideoFit() {
     videoFitChangedTimer?.cancel();
